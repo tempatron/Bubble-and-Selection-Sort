@@ -17,6 +17,8 @@ public class Main {
 
         printArray(num);
 
+
+        //Selection sort //Has Quadratic Complexity n^2
         int[] num1 = { 64, 34, 25, 12, 22, 11, 90 };
 
         for(int lastUnsortedIndex = num1.length - 1 ; lastUnsortedIndex > 0 ; lastUnsortedIndex --) {
@@ -34,7 +36,7 @@ public class Main {
 
   private static void swap(int[] array,int i , int j){
         if(i == j) {
-
+            return;
         }else{
             int temp = array[i];
             array[i] = array[j];
@@ -43,8 +45,8 @@ public class Main {
     }
 
     private static void printArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+        for(int x : array){
+            System.out.print(x + " ");
         }
         System.out.println();
     }

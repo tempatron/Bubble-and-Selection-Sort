@@ -5,6 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         //bubble sort // Quadratic complexity n^2
+        //it is a STABLE ALGORITHM
+        //BEST CASE = n
         int[] num = { 64, 34, 25, 12, 22, 11, 90 };
 
         for(int lastUnsortedIndex = num.length - 1 ; lastUnsortedIndex > 0 ; lastUnsortedIndex --  ){
@@ -19,6 +21,8 @@ public class Main {
 
 
         //Selection sort //Has Quadratic Complexity n^2
+        //SELECTION SORT A UNSTABLE ALGORITHM
+        // best case is also n^2
         int[] num1 = { 64, 34, 25, 12, 22, 11, 90 };
 
         for(int lastUnsortedIndex = num1.length - 1 ; lastUnsortedIndex > 0 ; lastUnsortedIndex --) {
